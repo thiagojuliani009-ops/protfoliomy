@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo - Thiago Juliani de Oliveira</title>
+  <style>
+    :root {
+      --color-white: #FFFFFF;
+      --color-light: #F5F5F5;
+      --color-purple: #8549C2;
+      --color-purple-hover: #723aa9;
+      --color-purple-light: rgba(133, 73, 194, 0.1);
+      --color-dark-gray: #535353;
+      --color-charcoal: #272532;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--color-light);
+      color: var(--color-charcoal);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .cv-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--color-white);
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(39, 37, 50, 0.12);
+      overflow: hidden;
+      border: 1px solid rgba(133, 73, 194, 0.2);
+    }
+
+    .no-print-bar {
+      background: var(--color-charcoal);
+      color: var(--color-white);
+      padding: 1rem 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-purple);
+      color: var(--color-white);
+      border: none;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--color-purple-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--color-white);
+      color: var(--color-white);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .cv-header {
+      background: linear-gradient(135deg, var(--color-charcoal) 0%, #3a3449 100%);
+      color: var(--color-white);
+      padding: 2.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      border-bottom: 4px solid var(--color-purple);
+    }
+
+    .cv-photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3.5px solid var(--color-purple);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      flex-shrink: 0;
+    }
+
+    .cv-title h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.2rem;
+    }
+
+    .cv-title .location-line {
+      font-size: 0.95rem;
+      color: #dfc7ff;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .cv-contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.4rem;
+      font-size: 0.88rem;
+      color: #e5e5e5;
+    }
+
+    .cv-contacts a {
+      color: #e5e5e5;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .cv-contacts a:hover {
+      color: var(--color-white);
+      text-decoration: underline;
+    }
+
+    .cv-body {
+      padding: 2.5rem 2rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--color-charcoal);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.45rem;
+      border-bottom: 2px solid var(--color-purple);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pcd-box {
+      background: #faf7fd;
+      border: 1.5px solid rgba(133, 73, 194, 0.35);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--color-purple);
+    }
+
+    .pcd-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--color-purple);
+      color: var(--color-white);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 0.65rem;
+    }
+
+    .pcd-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+      margin-bottom: 0.35rem;
+    }
+
+    .pcd-text {
+      font-size: 0.92rem;
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .pcd-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--color-purple);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .pcd-link:hover {
+      text-decoration: underline;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 1.6rem;
+      border-left: 2px solid #e3d8f1;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-purple);
+    }
+
+    .timeline-role {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+    }
+
+    .timeline-org {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-purple);
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      color: var(--color-dark-gray);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.92rem;
+      color: var(--color-dark-gray);
+      line-height: 1.6;
+    }
+
+    .project-item {
+      background: #fafafa;
+      border: 1px solid #ebebeb;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid var(--color-purple);
+    }
+
+    .project-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.35rem;
+    }
+
+    .project-name {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+    }
+
+    .project-link-btn {
+      font-size: 0.8rem;
+      color: var(--color-purple);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .project-link-btn:hover {
+      text-decoration: underline;
+    }
+
+    .skill-block {
+      margin-bottom: 1.15rem;
+    }
+
+    .skill-name-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      color: var(--color-charcoal);
+    }
+
+    .skill-bar {
+      height: 7px;
+      background: #eaeaea;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-purple), #9e64dc);
+      border-radius: 4px;
+    }
+
+    .cert-item {
+      margin-bottom: 1rem;
+      padding: 0.85rem;
+      background: var(--color-light);
+      border-radius: 8px;
+      border-left: 3px solid var(--color-purple);
+    }
+
+    .cert-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-charcoal);
+    }
+
+    .cert-link {
+      display: inline-block;
+      margin-top: 0.3rem;
+      font-size: 0.82rem;
+      color: var(--color-purple);
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    .cert-link:hover {
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .cv-container {
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+      }
+      .no-print-bar {
+        display: none !important;
+      }
+      .cv-header {
+        background: #272532 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .pcd-box, .pcd-badge, .skill-progress, .cert-item, .project-item {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cv-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.75rem;
+      }
+      .cv-contacts {
+        justify-content: center;
+      }
+      .cv-body {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+    <!-- Barra superior de ações -->
+    <div class="no-print-bar">
+      <span>Currículo Atualizado — Thiago Juliani de Oliveira</span>
+      <div style="display:flex; gap:0.6rem;">
+        <button class="btn" onclick="window.print()">
+          🖨️ Imprimir / Salvar em PDF
+        </button>
+        <a href="index.html" class="btn btn-outline">
+          ← Voltar ao Portfólio
+        </a>
+      </div>
+    </div>
+
+    <!-- Cabeçalho com Foto e Contatos -->
+    <header class="cv-header">
+      <img src="foto_thiago.jpg.jpg" onerror="this.onerror=null; this.src='foto_thiago.jpg';" alt="Thiago Juliani de Oliveira" class="cv-photo">
+      <div class="cv-title">
+        <h1>Thiago Juliani de Oliveira</h1>
+        <div class="location-line">
+          📍 Pelotas, Rio Grande do Sul, Brasil
+        </div>
+        <div class="cv-contacts">
+          <a href="https://wa.me/5553984473607" target="_blank">📱 WhatsApp: (53) 98447-3607</a>
+          <a href="mailto:thiagojuliani009@gmail.com">✉️ thiagojuliani009@gmail.com</a>
+          <a href="https://www.linkedin.com/in/tjo-4699b937b" target="_blank">🔗 LinkedIn: /in/tjo-4699b937b</a>
+          <a href="https://github.com/thiagojuliani009-ops" target="_blank">💻 GitHub: thiagojuliani009-ops</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Corpo do Currículo -->
+    <div class="cv-body">
+      <!-- Coluna Principal -->
+      <main>
+        <!-- Resumo Oficial -->
+        <section style="margin-bottom: 2rem;">
+          <h3 class="section-title">Resumo</h3>
+          <p style="color: var(--color-dark-gray); font-size: 0.95rem; line-height: 1.75;">
+            Sou surdo e utilizo a <strong>Libras</strong> para comunicação principal, podendo também me comunicar por textos breves e diretos em português. Estou no <strong>3º semestre no Senac EAD em ADS</strong>, já tendo habilidade nos programas <strong>HTML, CSS, JavaScript e Python</strong>. Atualmente estou participando no desenvolvimento de um <strong>projeto de marcação de consultas médicas nas UBS's</strong>, utilizando o aplicativo WhatsApp, com o intuito de ajudar pacientes nas cidades do interior. Não tenho experiência na área, no entanto, possuo um olhar crítico, analítico e sensível às mais diversas necessidades da comunidade, desejando, também, sempre aprender e evoluir; procuro um <strong>estágio</strong> com o objetivo de trabalhar em prol de projetos úteis e as mais diversas soluções tecnológicas.
+          </p>
+        </section>
+
+        <!-- Informações de Acessibilidade / PCD -->
+        <section class="pcd-box">
+          <span class="pcd-badge">Pessoa com Deficiência (PCD)</span>
+          <h4 class="pcd-title">Acessibilidade & Comunicação</h4>
+          <p class="pcd-text">
+            <strong>Condição:</strong> Surdez profunda (acima de 91 dB).<br>
+            <strong>Comunicação no dia a dia e entrevistas:</strong> Solicito que seja realizada preferencialmente com auxílio de intérprete de Língua Brasileira de Sinais (Libras) ou por mensagens de texto (com frases curtas e simples).
+          </p>
+          <a href="https://drive.google.com/file/d/1ZFSc_-Qy0k7XoHBqVdz1fhh4Day4yMnC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="pcd-link">
+            📄 Visualizar Laudo / Comprovante PCD no Google Drive ↗
+          </a>
+        </section>
+
+        <!-- Formação Acadêmica -->
+        <section style="margin-bottom: 2rem;">
+          <h3 class="section-title">Formação Acadêmica</h3>
+
+          <div class="timeline-item">
+            <div class="timeline-role">Análise de Sistemas de Computação / ADS (3º Semestre)</div>
+            <div class="timeline-org">Senac São Paulo (Senac EAD)</div>
+            <div class="timeline-date">Agosto de 2025 – Dezembro de 2027</div>
+            <div class="timeline-desc">
+              Graduação em Análise e Desenvolvimento de Sistemas (cursando atualmente o 3º semestre), com formação em desenvolvimento web, estruturas de programação, modelagem de banco de dados e engenharia de software.
+            </div>
+          </div>
+        </section>
+
+        <!-- Projetos Práticos & Sociais -->
+        <section>
+          <h3 class="section-title">Projetos & Portfólio</h3>
+
+          <div class="project-item">
+            <div class="project-header-row">
+              <span class="project-name">Marcação de Consultas UBS (WhatsApp)</span>
+              <span style="font-size: 0.75rem; background: #e8dbf7; color: #8549C2; padding: 2px 6px; border-radius: 4px; font-weight: 700;">Impacto Social</span>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--color-dark-gray); line-height: 1.5;">
+              Projeto de inovação social com o intuito de facilitar a marcação de consultas médicas nas UBS's via WhatsApp para pacientes de cidades do interior.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header-row">
+              <span class="project-name">Carro Web (Testauto)</span>
+              <a href="https://thiagojuliani009-ops.github.io/testauto/" target="_blank" class="project-link-btn">Acessar Site ↗</a>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--color-dark-gray); line-height: 1.5;">
+              Aplicação web com catálogo dinâmico de veículos, estruturada com HTML, CSS e JavaScript.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header-row">
+              <span class="project-name">TJO Pet Domínio</span>
+              <a href="https://tjopet.com.br/" target="_blank" class="project-link-btn">tjopet.com.br ↗</a>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--color-dark-gray); line-height: 1.5;">
+              Portal e sistema voltado ao segmento pet com arquitetura web e domínio registrado próprio.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header-row">
+              <span class="project-name">Dashboards Analíticos (Madeira & Vendas)</span>
+              <span style="font-size: 0.75rem; color: var(--color-dark-gray);">Excel / Planilhas</span>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--color-dark-gray); line-height: 1.5;">
+              Painéis interativos de produção, estoques e KPIs comerciais de vendas em Excel e Google Planilhas.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Coluna Lateral -->
+      <aside>
+        <!-- Habilidades -->
+        <section style="margin-bottom: 2rem;">
+          <h3 class="section-title">Habilidades</h3>
+
+          <div class="skill-block">
+            <div class="skill-name-row">
+              <span>HTML</span>
+              <span>Avançado</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-name-row">
+              <span>CSS</span>
+              <span>Avançado</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-name-row">
+              <span>JavaScript</span>
+              <span>Avançado</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-name-row">
+              <span>Python</span>
+              <span>Intermediário</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 72%;"></div></div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-name-row">
+              <span>SQLite</span>
+              <span>Básico</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 50%;"></div></div>
+          </div>
+
+          <div class="skill-block">
+            <div class="skill-name-row">
+              <span>Excel / Planilha</span>
+              <span>Avançado</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+        </section>
+
+        <!-- Certificações -->
+        <section style="margin-bottom: 2rem;">
+          <h3 class="section-title">Certificações</h3>
+
+          <div class="cert-item">
+            <div class="cert-name">Front-end</div>
+            <a href="https://drive.google.com/drive/folders/1Nt53MirOvE_TyqXCnKjH-adV2q_4BcCB?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">
+              Visualizar no Drive ↗
+            </a>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-name">Back-end</div>
+            <a href="https://drive.google.com/drive/folders/1NCD7PbH4I_26LZij7E1fAMEinxck10nD?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">
+              Visualizar no Drive ↗
+            </a>
+          </div>
+
+          <div class="cert-item">
+            <div class="cert-name">Banco de Dados / Excel</div>
+            <a href="https://drive.google.com/drive/folders/1V30O6a2pAXqxwKGFBs9qPWesY5JiYutl?usp=sharing" target="_blank" rel="noopener noreferrer" class="cert-link">
+              Visualizar no Drive ↗
+            </a>
+          </div>
+        </section>
+
+        <!-- Links Online -->
+        <section>
+          <h3 class="section-title">Acessos Rápidos</h3>
+          <div style="display:flex; flex-direction:column; gap:0.6rem; font-size:0.88rem;">
+            <a href="https://thiagojuliani009-ops.github.io/testauto/" target="_blank" style="color:var(--color-purple); text-decoration:none; font-weight:600;">
+              🌐 Site: testauto (GitHub Pages) ↗
+            </a>
+            <a href="https://tjopet.com.br/" target="_blank" style="color:var(--color-purple); text-decoration:none; font-weight:600;">
+              🌐 Domínio: tjopet.com.br ↗
+            </a>
+            <a href="https://github.com/thiagojuliani009-ops" target="_blank" style="color:var(--color-purple); text-decoration:none; font-weight:600;">
+              💻 GitHub: thiagojuliani009-ops ↗
+            </a>
+            <a href="https://www.linkedin.com/in/tjo-4699b937b" target="_blank" style="color:var(--color-purple); text-decoration:none; font-weight:600;">
+              🔗 LinkedIn: /in/tjo-4699b937b ↗
+            </a>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+</body>
+</html>

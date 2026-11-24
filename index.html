@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago Juliani de Oliveira | Desenvolvedor Web, Mobile & Dashboards</title>
+  <meta name="description" content="Portfólio e Currículo de Thiago Juliani de Oliveira. Estudante de Análise e Desenvolvimento de Sistemas (Senac EAD). HTML, CSS, JavaScript, Python, Dashboards e Planilhas. Pelotas, RS.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER / NAVBAR
+       Menu: Início, Sobre, Habilidades, Experiência, Certificado, Projeto
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-badge">TJO</span>
+        <span>Thiago Juliani</span>
+      </a>
+
+      <!-- Menu Principal -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio" class="nav-link active">Início</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+        <li><a href="#certificados" class="nav-link">Certificado</a></li>
+        <li><a href="#projetos" class="nav-link">Projeto</a></li>
+      </ul>
+
+      <!-- Ações do Header -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-theme" title="Alternar Modo Escuro/Claro" aria-label="Alternar tema">
+          <span id="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <a href="https://wa.me/5553984473607" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Contato</span>
+        </a>
+
+        <button class="btn-mobile-menu" id="mobile-menu-btn" aria-label="Abrir Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO / INÍCIO
+       ========================================================================== -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container hero-grid">
+      <!-- Informações Textuais -->
+      <div class="hero-info">
+        <div class="hero-greeting">
+          <span>👋 Bem-vindo(a) ao meu portfólio oficial</span>
+        </div>
+
+        <div class="hero-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Pelotas, Rio Grande do Sul, Brasil</span>
+        </div>
+
+        <h1 class="hero-name">
+          Thiago Juliani <span>de Oliveira</span>
+        </h1>
+
+        <div class="hero-role">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8549C2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span>Desenvolvedor Web & Mobile | Dashboards & Soluções em Dados</span>
+        </div>
+
+        <p class="hero-bio">
+          Sou surdo e utilizo a <strong>Libras</strong> para comunicação principal, podendo também me comunicar por <strong>textos breves e diretos</strong> em português. Estou no <strong>3º semestre no Senac EAD em Análise e Desenvolvimento de Sistemas</strong>, com habilidades em HTML, CSS, JavaScript, Python e Excel/Planilhas. Atualmente desenvolvo um projeto de <strong>marcação de consultas médicas nas UBS's via WhatsApp</strong> para pacientes do interior. Busco um estágio com o objetivo de atuar em prol de soluções tecnológicas úteis para a comunidade.
+        </p>
+
+        <!-- CTAs Principais -->
+        <div class="hero-cta-group">
+          <a href="https://wa.me/5553984473607?text=Ol%C3%A1%20Thiago,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>WhatsApp (53) 98447-3607</span>
+          </a>
+
+          <!-- Download / Visualização CV -->
+          <a href="curriculo_thiago_juliani.html" target="_blank" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Ver / Baixar Currículo</span>
+          </a>
+
+          <a href="#projetos" class="btn btn-secondary">
+            <span>Ver Projetos</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="hero-socials">
+          <a href="https://github.com/thiagojuliani009-ops" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub de Thiago">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/tjo-4699b937b" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn de Thiago">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://thiagojuliani009-ops.github.io/testauto/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Site Online Carro Web">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span>Site Online</span>
+          </a>
+
+          <a href="https://tjopet.com.br/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Domínio Oficial tjopet.com.br">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <span>tjopet.com.br</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card com Foto Oficial -->
+      <div class="hero-image-wrapper">
+        <div class="hero-photo-card">
+          <div class="photo-frame">
+            <img src="foto_thiago.jpg.jpg" onerror="this.onerror=null; this.src='foto_thiago.jpg';" alt="Thiago Juliani de Oliveira" loading="eager">
+            <div class="photo-status-badge">
+              <span class="status-dot"></span>
+              <span>Disponível para Estágio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOBRE & INCLUSÃO PCD
+       ========================================================================== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Conheça Minha Trajetória</span>
+        <h2 class="section-title">Sobre <span>Mim</span></h2>
+        <p class="section-description">Compromisso com soluções tecnológicas acessíveis, olhar analítico e dedicação contínua ao aprendizado.</p>
+      </div>
+
+      <div class="sobre-grid">
+        <!-- Conteúdo do Sobre -->
+        <div class="sobre-content">
+          <div class="sobre-text">
+            <p>
+              Olá! Meu nome é <strong>Thiago Juliani de Oliveira</strong>, resido em <strong>Pelotas, Rio Grande do Sul</strong>. Sou estudante do curso de <strong>Análise de Sistemas de Computação (Análise e Desenvolvimento de Sistemas) no Senac São Paulo (EAD)</strong>, cursando atualmente o <strong>3º semestre</strong>.
+            </p>
+            <p>
+              Desenvolvo projetos utilizando <strong>HTML, CSS, JavaScript e Python</strong>, além de construção de <strong>Dashboards e planilhas avançadas no Excel e Google Planilhas</strong>.
+            </p>
+            <p>
+              Não tenho experiência prévia formal na área, porém possuo um <strong>olhar crítico, analítico e sensível</strong> às necessidades reais da comunidade. Atualmente participo do desenvolvimento de um <strong>projeto de marcação de consultas médicas nas UBS's via WhatsApp</strong>, com foco em auxiliar pacientes nas cidades do interior.
+            </p>
+            <p>
+              Estou à procura de uma oportunidade de <strong>estágio</strong> para aplicar meus conhecimentos em prol de projetos úteis e seguir em constante evolução técnica.
+            </p>
+          </div>
+
+          <!-- Card de Acessibilidade & Comunicação PCD -->
+          <div class="pcd-highlight-card">
+            <div class="pcd-tag-row">
+              <span class="pcd-badge-pill">Acessibilidade & Inclusão (PCD)</span>
+              <span style="font-size: 0.8rem; color: var(--c-purple); font-weight: 700;">+91 dB</span>
+            </div>
+            <h4>Comunicação & Entrevistas</h4>
+            <p>
+              Sou surdo (surdez profunda acima de 91 dB). Para o dia a dia e processos seletivos, solicito que a comunicação seja realizada preferencialmente com <strong>auxílio de intérprete de Libras</strong> ou por <strong>mensagens de texto (com frases curtas e simples)</strong>.
+            </p>
+            <a href="https://drive.google.com/file/d/1ZFSc_-Qy0k7XoHBqVdz1fhh4Day4yMnC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="pcd-laudo-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Acessar Laudo / Comprovante PCD no Google Drive ↗</span>
+            </a>
+          </div>
+
+          <!-- Contatos Rápidos -->
+          <div class="sobre-contact-list">
+            <a href="https://wa.me/5553984473607" target="_blank" rel="noopener noreferrer" class="contact-mini-card">
+              <div class="contact-mini-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
+              <div class="contact-mini-info">
+                <h4>WhatsApp</h4>
+                <p>53 98447-3607</p>
+              </div>
+            </a>
+
+            <a href="mailto:thiagojuliani009@gmail.com" class="contact-mini-card">
+              <div class="contact-mini-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-mini-info">
+                <h4>E-mail</h4>
+                <p>thiagojuliani009@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Estatísticas & Diferenciais -->
+        <div class="sobre-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🏥</div>
+            <div class="stat-number">UBS</div>
+            <div class="stat-title">Projeto Social de Saúde (WhatsApp)</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-number">Senac</div>
+            <div class="stat-title">Graduação ADS (3º Semestre)</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">🌐</div>
+            <div class="stat-number">2</div>
+            <div class="stat-title">Sites Online & Domínio Registrado</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">📊</div>
+            <div class="stat-number">100%</div>
+            <div class="stat-title">Dedicação a Projetos de Impacto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HABILIDADES
+       ========================================================================== -->
+  <section class="section" id="habilidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Stack & Conhecimentos</span>
+        <h2 class="section-title">Minhas <span>Habilidades</span></h2>
+        <p class="section-description">Conjunto de tecnologias utilizadas no desenvolvimento de páginas, aplicações e análises de dados.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- HTML -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 3l1.5 17L12 22l6.5-2L20 3H4z"></path>
+                  <path d="M7 7h10"></path>
+                  <path d="M7 11h9.5"></path>
+                  <path d="M8 15h7l-.5 3-2.5.7-2.5-.7-.2-1.5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-name">HTML</h3>
+            </div>
+            <span class="skill-level-badge level-avancado">Avançado</span>
+          </div>
+          <p class="skill-desc">Estruturação semântica, acessibilidade web, SEO técnico e organização sólida de documentos e páginas modernas.</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-header">
+              <span>Nível</span>
+              <span>Avançado (95%)</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 3l1.5 17L12 22l6.5-2L20 3H4z"></path>
+                  <path d="M7 7h10"></path>
+                  <path d="M16 11H7.5"></path>
+                  <path d="M7 15h8.5l-.5 3-3 1-3-1"></path>
+                </svg>
+              </div>
+              <h3 class="skill-name">CSS</h3>
+            </div>
+            <span class="skill-level-badge level-avancado">Avançado</span>
+          </div>
+          <p class="skill-desc">Design responsivo (mobile e desktop), Flexbox, CSS Grid, variáveis customizadas, animações e interfaces atraentes.</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-header">
+              <span>Nível</span>
+              <span>Avançado (92%)</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <path d="M9 8v6a2 2 0 0 1-2 2H6"></path>
+                  <path d="M14 15c.5.7 1.2 1 2 1s2-.5 2-1.5c0-2-3-1.5-3-3s1-1.5 2-1.5 1.7.5 2 1.5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-name">JavaScript</h3>
+            </div>
+            <span class="skill-level-badge level-avancado">Avançado</span>
+          </div>
+          <p class="skill-desc">Manipulação dinâmica de DOM, eventos, integração com APIs, funções assíncronas (async/await) e interatividade completa.</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-header">
+              <span>Nível</span>
+              <span>Avançado (90%)</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Excel / Planilha -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="8" y1="13" x2="16" y2="13"></line>
+                  <line x1="8" y1="17" x2="16" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-name">Excel / Planilha</h3>
+            </div>
+            <span class="skill-level-badge level-avancado">Avançado</span>
+          </div>
+          <p class="skill-desc">Dashboards analíticos, controle de indicadores KPIs, relatórios gerenciais, fórmulas complexas e tratamento de bases de dados.</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-header">
+              <span>Nível</span>
+              <span>Avançado (95%)</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2C6.5 2 6 4.5 6 4.5V8h6V9H4.5S2 9.5 2 15s2.5 6 2.5 6H7v-3.5a2.5 2.5 0 0 1 2.5-2.5h5a2.5 2.5 0 0 1 2.5 2.5V21h1.5s2.5-.5 2.5-6-2.5-6-2.5-6H18V8h-6V7h7.5S22 6.5 22 2H12z"></path>
+                  <circle cx="9" cy="5.5" r="1" fill="currentColor"></circle>
+                  <circle cx="15" cy="18.5" r="1" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <h3 class="skill-name">Python</h3>
+            </div>
+            <span class="skill-level-badge level-intermediario">Intermediário</span>
+          </div>
+          <p class="skill-desc">Lógica de programação, scripts de automação de rotinas, processamento de dados e integração de arquivos estruturados.</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-header">
+              <span>Nível</span>
+              <span>Intermediário (72%)</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 72%;"></div></div>
+          </div>
+        </div>
+
+        <!-- SQLite -->
+        <div class="skill-card">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-name">SQLite</h3>
+            </div>
+            <span class="skill-level-badge level-basico">Básico</span>
+          </div>
+          <p class="skill-desc">Modelagem de bancos de dados relacionais, criação de tabelas, consultas SQL (SELECT, INSERT, UPDATE, DELETE) e integridade de dados.</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-header">
+              <span>Nível</span>
+              <span>Básico (50%)</span>
+            </div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 50%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPERIÊNCIA & FORMAÇÃO ACADÊMICA
+       ========================================================================== -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Formação & Trajetória</span>
+        <h2 class="section-title">Minha <span>Experiência</span></h2>
+        <p class="section-description">Formação acadêmica atual no Senac São Paulo, projetos práticos de impacto e capacitação constante.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-line"></div>
+
+        <!-- Formação Principal: Senac São Paulo -->
+        <div class="timeline-card">
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-badge-row">
+              <span class="timeline-type">🎓 Graduação em Andamento (3º Semestre)</span>
+              <span class="timeline-period">Agosto de 2025 – Dezembro de 2027</span>
+            </div>
+            <h3 class="timeline-title">Análise de Sistemas de Computação / ADS</h3>
+            <div class="timeline-institution">Senac São Paulo (Senac EAD)</div>
+            <p class="timeline-text">
+              Cursando o 3º semestre da graduação em Análise e Desenvolvimento de Sistemas. Desenvolvimento de raciocínio lógico aplicado a software, modelagem de banco de dados, arquiteturas de sistemas, lógica computacional e projetos tecnológicos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projeto de Inovação Social: UBS WhatsApp -->
+        <div class="timeline-card">
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-badge-row">
+              <span class="timeline-type">🏥 Projeto Social em Desenvolvimento</span>
+              <span class="timeline-period">Em andamento (2025 - Presente)</span>
+            </div>
+            <h3 class="timeline-title">Marcação de Consultas nas UBS's via WhatsApp</h3>
+            <div class="timeline-institution">Projeto de Saúde Pública & Impacto Social</div>
+            <p class="timeline-text">
+              Participação ativa na concepção e desenvolvimento de uma solução tecnológica para agendamento e marcação de consultas médicas nas Unidades Básicas de Saúde (UBS's) pelo WhatsApp, facilitando o acesso à saúde para pacientes em cidades do interior.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experiência IFRS -->
+        <div class="timeline-card">
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-badge-row">
+              <span class="timeline-type">💻 Programação Web</span>
+              <span class="timeline-period">8 de Março de 2025 – 16 de Julho de 2025</span>
+            </div>
+            <h3 class="timeline-title">Programador Web</h3>
+            <div class="timeline-institution">Instituto Federal do Rio Grande do Sul (IFRS)</div>
+            <p class="timeline-text">
+              Desenvolvimento de páginas e aplicações web, estruturação de layouts responsivos com HTML5, CSS3 e JavaScript, assegurando usabilidade e padrões de acessibilidade.
+            </p>
+          </div>
+        </div>
+
+        <!-- DIO.me -->
+        <div class="timeline-card">
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-box">
+            <div class="timeline-badge-row">
+              <span class="timeline-type">🚀 Cursos & Capacitação</span>
+              <span class="timeline-period">Agosto de 2025</span>
+            </div>
+            <h3 class="timeline-title">Cursos de Especialização em Tecnologia</h3>
+            <div class="timeline-institution">dio.me</div>
+            <p class="timeline-text">
+              Cursos práticos e bootcamps de tecnologia voltados para raciocínio computacional, estruturas de desenvolvimento web e boas práticas de mercado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CERTIFICADO
+       ========================================================================== -->
+  <section class="section" id="certificados">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Validações Oficiais</span>
+        <h2 class="section-title">Meus <span>Certificados</span></h2>
+        <p class="section-description">Acesse diretamente os certificados armazenados nas pastas oficiais do Google Drive.</p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Front-end -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon-box">🎨</div>
+            <div class="cert-title-wrap">
+              <h3>Front-end</h3>
+              <span class="cert-provider">Google Drive Oficial</span>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Certificações comprovando domínio em HTML, CSS, JavaScript, estruturação web responsiva, interatividade e experiência do usuário.
+          </p>
+          <div class="cert-skills-tags">
+            <span class="cert-skill-tag">HTML</span>
+            <span class="cert-skill-tag">CSS</span>
+            <span class="cert-skill-tag">JavaScript</span>
+            <span class="cert-skill-tag">Responsividade</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/1Nt53MirOvE_TyqXCnKjH-adV2q_4BcCB?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple">
+            <span>Acessar Pasta Front-end</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Back-end -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon-box">⚙️</div>
+            <div class="cert-title-wrap">
+              <h3>Back-end</h3>
+              <span class="cert-provider">Google Drive Oficial</span>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Certificados validando conhecimentos de lógica computacional, algoritmos, fundamentos em Python e estruturação de rotinas de código.
+          </p>
+          <div class="cert-skills-tags">
+            <span class="cert-skill-tag">Python</span>
+            <span class="cert-skill-tag">Lógica de Programação</span>
+            <span class="cert-skill-tag">Algoritmos</span>
+            <span class="cert-skill-tag">Estruturas de Dados</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/1NCD7PbH4I_26LZij7E1fAMEinxck10nD?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple">
+            <span>Acessar Pasta Back-end</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Banco de Dados & Excel -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-icon-box">📊</div>
+            <div class="cert-title-wrap">
+              <h3>Banco de Dados & Excel</h3>
+              <span class="cert-provider">Google Drive Oficial</span>
+            </div>
+          </div>
+          <p class="cert-desc">
+            Comprovações em modelagem relacional com SQLite, construção de Dashboards, fórmulas complexas e tratamento de planilhas em Excel e Google Sheets.
+          </p>
+          <div class="cert-skills-tags">
+            <span class="cert-skill-tag">SQLite</span>
+            <span class="cert-skill-tag">Excel Avançado</span>
+            <span class="cert-skill-tag">Planilhas</span>
+            <span class="cert-skill-tag">Dashboards</span>
+          </div>
+          <a href="https://drive.google.com/drive/folders/1V30O6a2pAXqxwKGFBs9qPWesY5JiYutl?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple">
+            <span>Acessar Banco de Dados / Excel</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJETOS (COM VÍDEOS REAIS & LINKS ONLINE)
+       ========================================================================== -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Aplicações Reais & Portfólio</span>
+        <h2 class="section-title">Meus <span>Projetos</span></h2>
+        <p class="section-description">Aplicações com links online em produção e demonstrações em vídeo funcional.</p>
+      </div>
+
+      <!-- Filtros por Categoria -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
+        <button class="filter-btn" data-filter="web">Web & Domínio</button>
+        <button class="filter-btn" data-filter="social">Impacto Social</button>
+        <button class="filter-btn" data-filter="dashboard">Dashboards & Dados</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Projeto Social: UBS WhatsApp -->
+        <div class="project-card" data-category="social">
+          <div class="project-media-wrap" style="background: linear-gradient(135deg, #1f1b2b 0%, #352b47 100%);">
+            <span class="video-badge" style="background: rgba(133, 73, 194, 0.9);">
+              ❤️ Projeto de Impacto Social
+            </span>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1.5rem;">
+              <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(37, 211, 102, 0.2); border: 2px solid #25D366; display: flex; align-items: center; justify-content: center; margin-bottom: 0.8rem; color: #25D366;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
+              <span style="font-size: 0.95rem; font-weight: 800; color: #FFFFFF;">CONSULTAS UBS VIA WHATSAPP</span>
+              <span style="font-size: 0.8rem; color: #c4b5fd;">Apoio a Pacientes de Cidades do Interior</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Inovação Social & Saúde</span>
+            <h3 class="project-title">Marcação de Consultas UBS</h3>
+            <p class="project-description">
+              Solução tecnológica para facilitar o agendamento de consultas médicas em Unidades Básicas de Saúde pelo aplicativo WhatsApp, reduzindo filas e democratizando o atendimento no interior.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">WhatsApp API</span>
+              <span class="project-tag">Impacto Social</span>
+              <span class="project-tag">Saúde Pública</span>
+              <span class="project-tag">Acessibilidade</span>
+            </div>
+            <div class="project-actions">
+              <a href="#contato" class="btn btn-outline-purple btn-sm">
+                <span>Conversar Sobre Este Projeto</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 1: Carro Web (Testauto) -->
+        <div class="project-card" data-category="web">
+          <div class="project-media-wrap">
+            <span class="video-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Vídeo Demonstração
+            </span>
+            <button class="video-fullscreen-btn btn-watch-modal" data-video="carro_web.mp4" data-title="Carro Web (testauto) — Catálogo Automotivo" data-desc="Plataforma automotiva dinâmica com catálogo completo e busca online." title="Assistir em Tela Cheia">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </button>
+            <video class="project-video" controls playsinline preload="metadata">
+              <source src="carro_web.mp4" type="video/mp4">
+              Seu navegador não suporta reprodução de vídeo.
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Desenvolvimento Web</span>
+            <h3 class="project-title">Carro Web (testauto)</h3>
+            <p class="project-description">
+              Plataforma automotiva com catálogo dinâmico de veículos, busca inteligente e layout responsivo. Projeto hospedado e acessível publicamente via GitHub Pages.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">GitHub Pages</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://thiagojuliani009-ops.github.io/testauto/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>Acessar Site Online ↗</span>
+              </a>
+              <button class="btn btn-outline-purple btn-sm btn-watch-modal" data-video="carro_web.mp4" data-title="Carro Web (testauto) — Catálogo Automotivo" data-desc="Plataforma automotiva dinâmica com catálogo completo e busca online.">
+                <span>Expandir Vídeo ↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2: TJO Pet Domínio -->
+        <div class="project-card" data-category="web">
+          <div class="project-media-wrap">
+            <span class="video-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Vídeo Demonstração
+            </span>
+            <button class="video-fullscreen-btn btn-watch-modal" data-video="tjopet_donimio.mp4" data-title="TJO Pet Domínio — tjopet.com.br" data-desc="Portal e domínio personalizado para o segmento pet e veterinário." title="Assistir em Tela Cheia">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </button>
+            <video class="project-video" controls playsinline preload="metadata">
+              <source src="tjopet_donimio.mp4" type="video/mp4">
+              Seu navegador não suporta reprodução de vídeo.
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Domínio & Web</span>
+            <h3 class="project-title">TJO Pet Domínio</h3>
+            <p class="project-description">
+              Portal profissional com domínio próprio registrado (tjopet.com.br), dedicado à apresentação de produtos e serviços para o segmento pet com interface amigável.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">tjopet.com.br</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://tjopet.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>Acessar Domínio ↗</span>
+              </a>
+              <button class="btn btn-outline-purple btn-sm btn-watch-modal" data-video="tjopet_donimio.mp4" data-title="TJO Pet Domínio — tjopet.com.br" data-desc="Portal e domínio personalizado para o segmento pet e veterinário.">
+                <span>Expandir Vídeo ↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3: Madeira Dashboard -->
+        <div class="project-card" data-category="dashboard">
+          <div class="project-media-wrap">
+            <span class="video-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Vídeo Demonstração
+            </span>
+            <button class="video-fullscreen-btn btn-watch-modal" data-video="madeira_dashboard.mp4" data-title="Madeira Dashboard — Controle de Produção" data-desc="Painel de controle produtivo e inventário para o setor madeireiro." title="Assistir em Tela Cheia">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </button>
+            <video class="project-video" controls playsinline preload="metadata">
+              <source src="madeira_dashboard.mp4" type="video/mp4">
+              Seu navegador não suporta reprodução de vídeo.
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Dashboards & Planilhas</span>
+            <h3 class="project-title">Madeira Dashboard</h3>
+            <p class="project-description">
+              Dashboard analítico desenvolvido em planilhas para controle de processos produtivos, precificação, inventário e cálculo de custos no setor de madeira.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Excel</span>
+              <span class="project-tag">Google Planilhas</span>
+              <span class="project-tag">Gestão de Produção</span>
+              <span class="project-tag">KPIs</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-outline-purple btn-sm btn-watch-modal" data-video="madeira_dashboard.mp4" data-title="Madeira Dashboard — Controle de Produção" data-desc="Painel de controle produtivo e inventário para o setor madeireiro.">
+                <span>Expandir Vídeo ↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4: Vende Dashboard -->
+        <div class="project-card" data-category="dashboard">
+          <div class="project-media-wrap">
+            <span class="video-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Vídeo Demonstração
+            </span>
+            <button class="video-fullscreen-btn btn-watch-modal" data-video="vende_dashboard.mp4" data-title="Vende Dashboard — Métricas Comerciais" data-desc="Painel gerencial de vendas com gráficos dinâmicos e metas." title="Assistir em Tela Cheia">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </button>
+            <video class="project-video" controls playsinline preload="metadata">
+              <source src="vende_dashboard.mp4" type="video/mp4">
+              Seu navegador não suporta reprodução de vídeo.
+            </video>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Dashboards Comerciais</span>
+            <h3 class="project-title">Vende Dashboard</h3>
+            <p class="project-description">
+              Painel comercial interativo com indicadores de faturamento, curvas de vendas periódicas e análise visual de desempenho de equipes de vendas.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Excel Avançado</span>
+              <span class="project-tag">Gráficos Dinâmicos</span>
+              <span class="project-tag">Metas de Vendas</span>
+              <span class="project-tag">Business Intelligence</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-outline-purple btn-sm btn-watch-modal" data-video="vende_dashboard.mp4" data-title="Vende Dashboard — Métricas Comerciais" data-desc="Painel gerencial de vendas com gráficos dinâmicos e metas.">
+                <span>Expandir Vídeo ↗</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEÇÃO DE CONTATO
+       ========================================================================== -->
+  <section class="section contact-section" id="contato">
+    <div class="container">
+      <div class="contact-card-main">
+        <div class="contact-left">
+          <span class="section-tag">Contato & Recrutamento</span>
+          <h3>Vamos Conversar?</h3>
+          <p>
+            Estou em busca de oportunidade de <strong>estágio</strong> em desenvolvimento de software, criação web/mobile, dashboards ou análise de dados. Fique à vontade para entrar em contato via WhatsApp ou e-mail!
+          </p>
+
+          <div class="contact-links-grid">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/5553984473607?text=Ol%C3%A1%20Thiago,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <div class="contact-link-left">
+                <div class="contact-link-icon" style="background: rgba(37, 211, 102, 0.15); color: #25D366;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <h5>WhatsApp Principal</h5>
+                  <span>(53) 98447-3607</span>
+                </div>
+              </div>
+              <button class="copy-btn btn-copy" data-copy="53984473607" title="Copiar número">
+                📋 Copiar
+              </button>
+            </a>
+
+            <!-- E-mail -->
+            <a href="mailto:thiagojuliani009@gmail.com" class="contact-link-row">
+              <div class="contact-link-left">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <h5>E-mail Direto</h5>
+                  <span>thiagojuliani009@gmail.com</span>
+                </div>
+              </div>
+              <button class="copy-btn btn-copy" data-copy="thiagojuliani009@gmail.com" title="Copiar e-mail">
+                📋 Copiar
+              </button>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/tjo-4699b937b" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <div class="contact-link-left">
+                <div class="contact-link-icon" style="background: rgba(10, 102, 194, 0.15); color: #0A66C2;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <h5>LinkedIn Oficial</h5>
+                  <span>linkedin.com/in/tjo-4699b937b</span>
+                </div>
+              </div>
+              <span style="font-size: 0.85rem; color: var(--c-purple);">Abrir ↗</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/thiagojuliani009-ops" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <div class="contact-link-left">
+                <div class="contact-link-icon" style="background: rgba(255, 255, 255, 0.1); color: var(--text-primary);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-text">
+                  <h5>GitHub (Portfólio de Código)</h5>
+                  <span>github.com/thiagojuliani009-ops</span>
+                </div>
+              </div>
+              <span style="font-size: 0.85rem; color: var(--c-purple);">Abrir ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Box Direito: Foto & Links Rápidos -->
+        <div class="contact-right-box">
+          <img src="foto_thiago.jpg.jpg" onerror="this.onerror=null; this.src='foto_thiago.jpg';" alt="Thiago Juliani de Oliveira" class="contact-box-avatar">
+          <h4 class="contact-box-title">Thiago Juliani de Oliveira</h4>
+          <p class="contact-box-desc">
+            Pelotas, RS • Disponível para oportunidades de estágio e projetos em tecnologia.
+          </p>
+          <div style="display:flex; flex-direction:column; gap:0.75rem; width:100%; max-width:280px;">
+            <a href="https://wa.me/5553984473607" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <span>Conversar pelo WhatsApp</span>
+            </a>
+            <a href="curriculo_thiago_juliani.html" target="_blank" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Ver / Imprimir Currículo</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1ZFSc_-Qy0k7XoHBqVdz1fhh4Day4yMnC/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline-purple btn-sm">
+              <span>Laudo PCD no Google Drive ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL DE VÍDEO EXPANDIDO
+       ========================================================================== -->
+  <div class="video-modal" id="video-modal">
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <h4 class="video-modal-title" id="video-modal-title">Vídeo do Projeto</h4>
+        <button class="video-modal-close" id="video-modal-close" aria-label="Fechar vídeo">&times;</button>
+      </div>
+      <div class="video-modal-player-wrap">
+        <video id="video-modal-player" controls playsinline>
+          <source id="video-modal-source" src="" type="video/mp4">
+          Seu navegador não suporta reprodução de vídeo.
+        </video>
+      </div>
+      <div class="video-modal-footer">
+        <p class="video-modal-desc" id="video-modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Notificação -->
+  <div class="toast-msg" id="toast-msg">Copiado para a área de transferência!</div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <ul class="footer-nav">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#certificados">Certificado</a></li>
+        <li><a href="#projetos">Projeto</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <p>&copy; 2026 Thiago Juliani de Oliveira • Pelotas, RS. Desenvolvido com HTML5, CSS3 e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
